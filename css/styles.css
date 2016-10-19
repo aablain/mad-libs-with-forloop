@@ -1,0 +1,20 @@
+#letter {
+  display: none;
+}
+h3, h4, p {
+  font-family: fantasy;
+}
+.address p {
+  font-family: monospace;
+  margin: 0px;
+  padding: 0px;
+  line-height: 3px;
+}
+#signature {
+  margin-left: 4em;
+  font-family: cursive;
+}
+
+.address {
+  float: right;
+}
