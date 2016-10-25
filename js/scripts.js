@@ -1,13 +1,14 @@
 $(document).ready(function(){
   $("#blanks form").submit(function(event) {
     event.preventDefault();
-    var entries = ["userName", "bestFriend", "animal", "exclamation", "verb", "noun"];
-    entries.forEach(function(entry){
-      console.log(entry);
-      $("." + entry).text($("#" + entry).val());
-      console.log(entry);
-    });
-      console.log(entries);
+    var entries = ["userName", "bestFriend", "animal", "exclamation", "verb", "noun", "streetAddress", "city", "state", "zipCode"];
+    for(i = 0; i < entries.length; i++){
+      var outputText = $("#" + entries[i]).val();
+      //output into spans
+
+      $("." + entries[i]).text(outputText);
+    }
+
     // var userNameInput = $("input#userName").val();
     // var bestFriendInput = $("input#bestFriend").val();
     // var animalInput= $("input#animal").val();
